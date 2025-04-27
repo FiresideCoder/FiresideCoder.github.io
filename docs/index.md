@@ -7,7 +7,7 @@ hero:
   text: "讀書會"
   # tagline: My great project tagline
   image:
-    src: /apple-touch-icon.png
+    src: /logo.png
     alt: firesideCoder
   # actions:
   #   - theme: brand

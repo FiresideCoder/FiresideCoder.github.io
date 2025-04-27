@@ -3,7 +3,7 @@ import { head, nav, sidebar } from './configs'
 
 // 主題 配置
 const themeConfig: DefaultTheme.Config = {
-  logo: '/logo.png',
+  logo: '/apple-touch-icon.png',
   // https://vitepress.dev/reference/default-theme-config
   siteTitle: '烤肉聚-讀書會',
   outline: {
