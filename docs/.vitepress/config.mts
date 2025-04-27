@@ -27,7 +27,7 @@ const markdown = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/vitepress-firesidecoder/',   // 站點將部署在這個 base URL路徑
+  base: '/',   // 站點將部署在這個 base URL路徑
   lang: 'zh-TW',
   title: "烤肉聚-讀書會",
   description: '學習筆記',
