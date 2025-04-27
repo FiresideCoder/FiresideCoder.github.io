@@ -3,7 +3,7 @@ import { head, nav, sidebar } from './configs'
 
 // 主題 配置
 const themeConfig: DefaultTheme.Config = {
-  logo: '/apple-touch-icon.png',
+  logo: '/logo.png',
   // https://vitepress.dev/reference/default-theme-config
   siteTitle: '烤肉聚-讀書會',
   outline: {
@@ -16,7 +16,7 @@ const themeConfig: DefaultTheme.Config = {
   //   { icon: 'github', link: 'https://github.com/gumingWu/vitepress-fun' }
   // ],
   footer: {
-    copyright: 'MIT Lincensed | Copyright © 2024-present Eason',
+    copyright: 'MIT Lincensed | Copyright © 2025-present FireSideCoder',
   }
 }
 
