@@ -1,0 +1,38 @@
+name: deploy gh-pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    env:
+      ORGS_SECRET: ${{ secrets.CICD_SECRET }}
+      PUBLISH_DIR: ./docs/.vitepress/dist
+      PUBLISH_BRANCH: gh-pages
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run docs:build
+
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: $ORGS_SECRET
+          publish_dir: $PUBLISH_DIR
+          publish_branch: $PUBLISH_BRANCH
+          force_orphan: true
