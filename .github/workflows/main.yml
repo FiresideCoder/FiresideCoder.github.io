@@ -5,10 +5,6 @@ on:
       - master
 jobs:
   build-and-deploy:
-    env:
-      ORGS_SECRET: ${{ secrets.CICD_SECRET }}
-      PUBLISH_DIR: ./docs/.vitepress/dist
-      PUBLISH_BRANCH: gh-pages
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -32,7 +28,7 @@ jobs:
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: $ORGS_SECRET
-          publish_dir: $PUBLISH_DIR
-          publish_branch: $PUBLISH_BRANCH
+          github_token: ${{ secrets.CICD_SECRET }}
+          publish_dir: ./docs/.vitepress/dist
+          publish_branch: gh-pages
           force_orphan: true
