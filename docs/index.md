@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "烤肉聚"
+  name: "烤肉聚YA"
   text: "讀書會"
   # tagline: My great project tagline
   image:
@@ -16,7 +16,6 @@ hero:
   #   - theme: alt
   #     text: API Examples
   #     link: /api-examples
-  
 
 features:
   - title: Feature A
@@ -26,4 +25,3 @@ features:
   # - title: Feature C
   #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
