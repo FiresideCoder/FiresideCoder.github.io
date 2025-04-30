@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "烤肉聚YA"
+  name: "烤肉聚"
   text: "讀書會"
   # tagline: My great project tagline
   image:
