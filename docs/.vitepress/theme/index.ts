@@ -4,8 +4,8 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
-import HelloVue from '../components/Hello.vue'
 import CanvaPPT from '../components/CanvaPPT.vue'
+import TagIndex from '../components/TagIndex.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,8 +15,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
-    app.component('Hello', HelloVue)
     app.component('CanvaPPT', CanvaPPT)
+    app.component('TagIndex', TagIndex)
   }
 } satisfies Theme
