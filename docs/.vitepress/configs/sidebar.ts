@@ -20,6 +20,10 @@ export const sidebar = {
               text: "0323_例外處理 Exception",
               link: "/pages/reports/2025/0323_Joy_例外處理 Exception",
             },
+            {
+              text: "0419_17搞個微_服務",
+              link: "/pages/reports/2025/0419_Jessie_17搞個微_服務",
+            },
           ],
         },
         // {

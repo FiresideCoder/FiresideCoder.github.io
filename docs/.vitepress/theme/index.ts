@@ -5,7 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 
 import CanvaPPT from '../components/CanvaPPT.vue'
-import TagIndex from '../components/TagIndex.vue'
+// import TagIndex from '../components/TagIndex.vue'
 
 export default {
   extends: DefaultTheme,
@@ -16,6 +16,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component('CanvaPPT', CanvaPPT)
-    app.component('TagIndex', TagIndex)
+    // app.component('TagIndex', TagIndex)
   }
 } satisfies Theme
