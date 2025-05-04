@@ -17,5 +17,5 @@ date: "2025-02-22"
   })
 </script>
 
-{{ $frontmatter }}
+<!-- {{ $frontmatter }} -->
 <CanvaPPT v-bind="canvaData" />

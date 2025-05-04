@@ -21,10 +21,10 @@ export const nav = [
             text: "0419_17搞個微_服務",
             link: "/pages/reports/2025/0419_Jessie_17搞個微_服務",
           },
-          // {
-          //   text: "05_子毅_vue3",
-          //   link: "/pages/reports/2025/",
-          // },
+          {
+            text: "0510_搞懂非同步",
+            link: "/pages/reports/2025/0510_Eason_搞懂非同步",
+          },
         ],
       },
     ],
