@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-<<<<<<< Updated upstream
     "docs:dev": "vitepress dev docs",
-=======
-    "build:tags": "tsx scripts/gen-tags.ts",
-    "docs:dev": "npm run build:tags && vitepress dev docs",
->>>>>>> Stashed changes
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
