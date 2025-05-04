@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+<<<<<<< Updated upstream
     "docs:dev": "vitepress dev docs",
+=======
+    "build:tags": "tsx scripts/gen-tags.ts",
+    "docs:dev": "npm run build:tags && vitepress dev docs",
+>>>>>>> Stashed changes
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
@@ -12,6 +17,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^22.15.3",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
     "vitepress": "^1.6.3"
   }
 }
