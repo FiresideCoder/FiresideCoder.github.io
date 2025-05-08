@@ -7,7 +7,7 @@ export const nav = [
         items: [
           {
             text: "0222_Vue.js 從基礎到協作",
-            link: "/pages/reports/2025/0222_Eason_Vue.js 從基礎到協作",
+            link: "/pages/reports/2025/0222_Eason_Vue.js_從基礎到協作",
           },
           {
             text: "0309_Java基礎與物件導向",
@@ -15,16 +15,16 @@ export const nav = [
           },
           {
             text: "0323_例外處理 Exception",
-            link: "/pages/reports/2025/0323_Joy_例外處理 Exception",
+            link: "/pages/reports/2025/0323_Joy_例外處理_Exception",
           },
-          // {
-          //   text: "0419_聖雅_微服務",
-          //   link: "/pages/reports/2025/",
-          // },
-          // {
-          //   text: "05_子毅_vue3",
-          //   link: "/pages/reports/2025/",
-          // },
+          {
+            text: "0419_17搞個微_服務",
+            link: "/pages/reports/2025/0419_Jessie_17搞個微_服務",
+          },
+          {
+            text: "0510_搞懂非同步",
+            link: "/pages/reports/2025/0510_Eason_搞懂非同步",
+          },
         ],
       },
     ],

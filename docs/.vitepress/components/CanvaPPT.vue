@@ -5,11 +5,24 @@ const $props = defineProps<{
   author: string
   createdDate: string
 }>()
+
+import { useData } from 'vitepress'
+const { frontmatter } = useData();
 </script>
 
 <template>
   <h1>{{ $props.title }}</h1>
-  <h5>{{ `${$props.author} - ${$props.createdDate}` }}</h5>
+  <div class="info">
+    <h5>{{ `${$props.author} - ${$props.createdDate}` }}</h5>
+  </div>
+  <ul class="tags_wrap">
+    <li class="tag_list" v-for="(tag, index) in frontmatter.tags">
+      <template v-if="index !== 0">、</template>
+      <a class="tag_list_link" :href="`/tags/${tag}`">
+        # {{ tag }}
+      </a>
+    </li>
+  </ul>
   <div class="canvaWrap">
     <iframe loading="lazy" class="canvaIframe"
     :src="$props.src"
@@ -43,5 +56,30 @@ const $props = defineProps<{
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.tags_wrap {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin: 5px 0;
+}
+.tag_list {
+  font-size: 12px;
+}
+.tag_list + .tag_list {
+  margin-top: 0;
+}
+.tag_list_link {
+  color: var(--vp-c-brand-1);
+  /* background: var(--vp-c-brand-1); */
+  /* border-radius: 50vh;
+  padding: 2px 6px; */
 }
 </style>

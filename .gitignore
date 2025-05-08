@@ -4,3 +4,6 @@ node_modules
 package-lock.json
 
 **/cache/**
+
+docs/tags/**
+docs/.vitepress/tags.data.json

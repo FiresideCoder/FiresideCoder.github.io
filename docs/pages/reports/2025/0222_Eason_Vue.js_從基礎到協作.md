@@ -1,5 +1,5 @@
 ---
-title: 0222_Eason_Vue.js 從基礎到協作
+title: 0222_Eason_Vue.js_從基礎到協作
 tags: ['vue', '前端']
 date: "2025-02-22"
 ---
@@ -17,5 +17,4 @@ date: "2025-02-22"
   })
 </script>
 
-{{ $frontmatter }}
 <CanvaPPT v-bind="canvaData" />

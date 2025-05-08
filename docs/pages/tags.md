@@ -1,3 +1,3 @@
-# Tags
+# 所有 Tags
 
 <TagIndex />
