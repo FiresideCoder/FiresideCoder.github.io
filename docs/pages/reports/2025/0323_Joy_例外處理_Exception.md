@@ -1,5 +1,5 @@
 ---
-title: 0323_例外處理_Exception
+title: 0323_Joy_例外處理_Exception
 tags: ["Java", 'Exception', '後端']
 date: "2025-03-23"
 ---
