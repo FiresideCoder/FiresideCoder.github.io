@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as _,ae as r}from"./chunks/framework.K-YhQpXU.js";const h=JSON.parse('{"title":"後端","description":"","frontmatter":{"title":null},"headers":[],"relativePath":"tags/後端.md","filePath":"tags/後端.md"}'),s={name:"tags/後端.md"};function o(l,a,i,n,p,c){return _(),t("div",null,a[0]||(a[0]=[r("",2)]))}const m=e(s,[["render",o]]);export{h as __pageData,m as default};
