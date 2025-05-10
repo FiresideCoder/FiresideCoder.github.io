@@ -1,6 +1,6 @@
 ---
 title: 0510_Eason_搞懂非同步
-tags: ["JavaScript", '前端']
+tags: ["JavaScript", '前端', '非同步']
 date: "2025-05-10"
 ---
 

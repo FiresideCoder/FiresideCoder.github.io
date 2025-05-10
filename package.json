@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:tags": "tsx scripts/gen-tags.ts",
     "docs:dev": "npm run build:tags && vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:build": "npm run build:tags && vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "build:tags": "tsx scripts/gen-tags.ts"
   },
   "keywords": [],
   "author": "",
