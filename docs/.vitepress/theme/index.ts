@@ -1,21 +1,22 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
-import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-import './style.css'
+import { h } from "vue";
+import type { Theme } from "vitepress";
+import DefaultTheme from "vitepress/theme";
+import "./style.css";
+import "./tailwind.css";
 
-import CanvaPPT from '../components/CanvaPPT.vue'
-import TagIndex from '../components/TagIndex.vue'
+import CanvaPPT from "../components/CanvaPPT.vue";
+import TagIndex from "../components/TagIndex.vue";
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
+    });
   },
   enhanceApp({ app, router, siteData }) {
-    app.component('CanvaPPT', CanvaPPT)
-    app.component('TagIndex', TagIndex)
-  }
-} satisfies Theme
+    app.component("CanvaPPT", CanvaPPT);
+    app.component("TagIndex", TagIndex);
+  },
+} satisfies Theme;
