@@ -1,0 +1,11 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "vue": "html",
+    "postcss": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "editor.suggest.preview": true
+}

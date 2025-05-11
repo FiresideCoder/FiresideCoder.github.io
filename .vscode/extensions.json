@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "oderwat.indent-rainbow",
+    "yzane.markdown-pdf",
+    "trabpukcip.vscode-npm-scripts",
+    "vue.volar",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

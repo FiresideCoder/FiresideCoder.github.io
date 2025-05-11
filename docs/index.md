@@ -25,3 +25,10 @@ features:
   # - title: Feature C
   #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+<style>
+  .image-bg {
+    width: 200px !important;
+    height: 200px !important;
+  }
+</style>

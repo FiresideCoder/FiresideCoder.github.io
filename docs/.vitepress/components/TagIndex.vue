@@ -14,21 +14,13 @@ import tags from '../tags.data.json'
 
 <style scoped>
 .allTagsUl {
-  list-style: none;
-  display: flex;
-  grid-gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
+  @apply !list-none flex flex-wrap items-center p-[0] gap-[10px];
 }
 
 .tags_list {
-  background: #2b2b2b;
-  border-radius: 50vh;
-  padding: 5px 12px;
-}
-
-.tags_list + .tags_list {
-  margin-top: 0;
+  @apply bg-[var(--vp-c-gray-3)] rounded-[50vh] p-[5px_12px];
+  + .tags_list {
+    @apply mt-[0];
+  }
 }
 </style>
