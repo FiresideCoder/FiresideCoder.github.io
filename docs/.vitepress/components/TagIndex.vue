@@ -5,7 +5,7 @@ import tags from '../tags.data.json'
 <template>
   <ul class="allTagsUl">
     <li class="tags_list" v-for="(posts, tag) in tags" :key="tag">
-      <a :href="`/tags/${tag}`">
+      <a class="tags_list_link" :href="`/tags/${tag}`">
         {{ tag }} ({{ posts.length }})
       </a>
     </li>
@@ -18,9 +18,13 @@ import tags from '../tags.data.json'
 }
 
 .tags_list {
-  @apply bg-[var(--vp-c-gray-3)] rounded-[50vh] p-[5px_12px];
+  @apply p-[5px_0];
   + .tags_list {
     @apply mt-[0];
   }
+}
+
+.tags_list_link {
+  @apply bg-[var(--vp-c-gray-3)] rounded-[50vh] p-[5px_12px];
 }
 </style>
