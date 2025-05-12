@@ -21,8 +21,8 @@ export const sidebar = {
               link: "/pages/reports/2025/0323_Joy_例外處理_Exception",
             },
             {
-              text: "0419_17搞個微_服務",
-              link: "/pages/reports/2025/0419_Jessie_17搞個微_服務",
+              text: "0419_17搞個微-服務",
+              link: "/pages/reports/2025/0419_Jessie_17搞個微-服務",
             },
             {
               text: "0510_搞懂非同步",

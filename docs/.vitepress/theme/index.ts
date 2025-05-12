@@ -7,6 +7,7 @@ import "./tailwind.css";
 
 import CanvaPPT from "../components/CanvaPPT.vue";
 import TagIndex from "../components/TagIndex.vue";
+import BlogList from "../components/BlogList.vue";
 
 export default {
   extends: DefaultTheme,
@@ -18,5 +19,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component("CanvaPPT", CanvaPPT);
     app.component("TagIndex", TagIndex);
+    app.component("BlogList", BlogList);
   },
 } satisfies Theme;

@@ -12,7 +12,7 @@ import tags from '../tags.data.json'
   </ul>
 </template>
 
-<style scoped>
+<style scoped lang="css">
 .allTagsUl {
   @apply !list-none flex flex-wrap items-center p-[0] gap-[10px];
 }
