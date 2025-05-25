@@ -28,6 +28,10 @@ export const sidebar = {
               text: "0510_搞懂非同步",
               link: "/pages/reports/2025/0510_Eason_搞懂非同步",
             },
+            {
+              text: "0525_vue心得分享",
+              link: "/pages/reports/2025/0525_Yang_vue心得分享",
+            },
           ],
         },
       ],
