@@ -32,6 +32,10 @@ export const sidebar = {
               text: "0525_vue心得分享",
               link: "/pages/reports/2025/0525_Yang_vue心得分享",
             },
+            {
+              text: "0706_Java Web 進化史",
+              link: "/pages/reports/2025/0706_Joy_JavaWeb進化史",
+            },
           ],
         },
       ],
