@@ -12,7 +12,6 @@ date: "2025-07-06"
     author: 'Joy',
     createdDate: '2025-07-06',
   })
-</div>
 </script>
 
 <CanvaPPT v-bind="canvaData" />
