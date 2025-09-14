@@ -5,5 +5,5 @@ package-lock.json
 
 **/cache/**
 
-docs/tags/
+**/docs/tags/**.md
 docs/.vitepress/tags.data.json

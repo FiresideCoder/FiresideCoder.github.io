@@ -1,19 +1,17 @@
 <script setup lang="ts">
 const $props = defineProps<{
   src: string
-  title: string
-  author: string
-  createdDate: string
 }>()
 
 import { useData } from 'vitepress'
 const { frontmatter } = useData();
+const { title, author, date: createdDate } = frontmatter.value;
 </script>
 
 <template>
-  <h1>{{ $props.title }}</h1>
+  <h1>{{ title }}</h1>
   <div class="info">
-    <h5>{{ `${$props.author} - ${$props.createdDate}` }}</h5>
+    <h5>{{ `${author} - ${createdDate}` }}</h5>
   </div>
   <ul class="tags_wrap">
     <li class="tag_list" v-for="(tag, index) in frontmatter.tags">
