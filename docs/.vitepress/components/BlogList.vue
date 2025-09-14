@@ -15,6 +15,10 @@ function getExcerpt(content: string) {
   return plain.substring(0, 100)
 }
 
+function $formatDate(date: Date) {
+  return date.toISOString().split('T')[0];
+}
+
 onMounted(async () => {
   pages.value = (await usePages()).filter(page => page.date).map(page => ({
     title: page.title.split('_').pop(),
@@ -26,7 +30,10 @@ onMounted(async () => {
 
 <template>
   <div class="cardWrap">
-    <a :href="page.url" class="card bg-white" v-for="page in pages" :key="page.path">{{ page.title }}</a>
+    <a :href="page.url" class="card bg-white" v-for="page in pages" :key="page.path">
+      
+      {{$formatDate(page.date)}}<br/>{{ page.title }}
+    </a>
   </div>
 </template>
 
