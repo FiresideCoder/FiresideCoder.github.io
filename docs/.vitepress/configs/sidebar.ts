@@ -36,6 +36,14 @@ export const sidebar = {
               text: "0706_Java Web 進化史",
               link: "/pages/reports/2025/0706_Joy_JavaWeb進化史",
             },
+            {
+              text: "0727_17搞個微~服務_PartII實作篇",
+              link: "/pages/reports/2025/0727_Jessie_17搞個微-服務_PartII實作篇",
+            },
+            {
+              text: "0817_Vue心得分享",
+              link: "/pages/reports/2025/0817_Yang_Vue心得分享",
+            },
           ],
         },
       ],

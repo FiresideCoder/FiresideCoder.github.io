@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { useData } from 'vitepress';
 
 import { usePages } from '../composables/usePages';
@@ -31,7 +31,6 @@ onMounted(async () => {
 <template>
   <div class="cardWrap">
     <a :href="page.url" class="card bg-white" v-for="page in pages" :key="page.path">
-      
       {{$formatDate(page.date)}}<br/>{{ page.title }}
     </a>
   </div>
