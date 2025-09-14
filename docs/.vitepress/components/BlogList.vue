@@ -16,7 +16,7 @@ function getExcerpt(content: string) {
 }
 
 function $formatDateFullYear(date: Date) {
-  return date.getFullYear;
+  return date.getFullYear();
 }
 
 onMounted(async () => {
