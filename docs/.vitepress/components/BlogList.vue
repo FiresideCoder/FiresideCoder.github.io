@@ -21,7 +21,8 @@ function $formatDate(date: Date) {
 
 onMounted(async () => {
   pages.value = (await usePages()).filter(page => page.date).map(page => ({
-    title: page.title.split('_').pop(),
+    // title: page.title.split('_').pop(),
+    title: page.title,
     date: new Date(page.date),
     url: page.url.replace('.md', ''),
   }));
