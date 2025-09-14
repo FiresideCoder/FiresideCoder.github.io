@@ -15,8 +15,8 @@ function getExcerpt(content: string) {
   return plain.substring(0, 100)
 }
 
-function $formatDate(date: Date) {
-  return date.toISOString().split('T')[0];
+function $formatDateFullYear(date: Date) {
+  return date.getFullYear;
 }
 
 onMounted(async () => {
@@ -32,7 +32,7 @@ onMounted(async () => {
 <template>
   <div class="cardWrap">
     <a :href="page.url" class="card bg-white" v-for="page in pages" :key="page.path">
-      {{$formatDate(page.date)}}<br/>{{ page.title }}
+      {{$formatDateFullYear(page.date)}}<br/>{{ page.title }}
     </a>
   </div>
 </template>
