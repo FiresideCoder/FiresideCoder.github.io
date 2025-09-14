@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { useData } from 'vitepress';
 
 import { usePages } from '../composables/usePages';
@@ -15,6 +15,10 @@ function getExcerpt(content: string) {
   return plain.substring(0, 100)
 }
 
+function $dateFormat(date){
+  return date.getFullYear() + '/' + (date.getMonth()+1) + '/' + date.getDate();
+}
+
 onMounted(async () => {
   pages.value = (await usePages()).filter(page => page.date).map(page => ({
     title: page.title.split('_').pop(),
@@ -26,7 +30,9 @@ onMounted(async () => {
 
 <template>
   <div class="cardWrap">
-    <a :href="page.url" class="card bg-white" v-for="page in pages" :key="page.path">{{ page.title }}</a>
+    <a :href="page.url" class="card bg-white" v-for="page in pages" :key="page.path">
+      <p>{{$dateFormat(page.date)}}<br/>{{ page.title }}</p>
+    </a>
   </div>
 </template>
 

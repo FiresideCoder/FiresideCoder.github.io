@@ -26,8 +26,7 @@ const { frontmatter } = useData();
   <div class="canvaWrap">
     <iframe loading="lazy" class="canvaIframe"
     :src="$props.src"
-    allow="fullscreen">
-  </iframe>
+    allow="fullscreen" />
   </div>
 </template>
 

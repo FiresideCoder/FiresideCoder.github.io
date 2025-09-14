@@ -32,7 +32,6 @@ export default defineConfig({
   title: "烤肉聚-讀書會",
   description: '學習筆記',
   head,
-  lastUpdated: true,
   themeConfig,
   markdown,
   vite: {
