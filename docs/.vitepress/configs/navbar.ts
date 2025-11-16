@@ -37,13 +37,17 @@ export const nav = [
             text: "0727_17搞個微~服務_PartII 實作篇",
             link: "/pages/reports/2025/0727_Jessie_17搞個微-服務_PartII實作篇",
           },
-          // {
-          //   text: "0817_Vue心得分享II",
-          //   link: "/pages/reports/2025/0727_Jessie_17搞個微-服務_PartII實作篇",
-          // },
+          {
+            text: "0817_Vue心得分享II",
+            link: "/pages/reports/2025/0817_Yang_Vue心得分享II",
+          },
           {
             text: "0914_CSS深入學習I",
             link: "/pages/reports/2025/0914_Eason_CSS深入學習I",
+          },
+          {
+            text: "1116_CSS深入學習II",
+            link: "/pages/reports/2025/1116_Eason_CSS深入學習II",
           },
         ],
       },
